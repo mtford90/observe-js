@@ -1722,6 +1722,7 @@ expose.ArrayObserver = ArrayObserver;
 expose.ArrayObserver.calculateSplices = function(current, previous) {
 return arraySplice.calculateSplices(current, previous);
 };
+expose.Platform = Platform;
 expose.ArraySplice = ArraySplice;
 expose.ObjectObserver = ObjectObserver;
 expose.PathObserver = PathObserver;
