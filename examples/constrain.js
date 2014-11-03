@@ -158,7 +158,7 @@
     },
 
     getStayPriority: function() {
-      // This returns the strongest (lowest) stay priority of this method's
+      // This returns the strongest (lowest) stay priority of this method'siesta
       // output variables.
       return retval = this.variables_.reduce(function(min, variable) {
         return Math.min(min, variable.stayPriority);

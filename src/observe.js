@@ -591,7 +591,7 @@
    *
    * TODO(rafaelw): Implement "garbage collection". In order to move work off
    * the critical path, when Observers are closed, their observed objects are
-   * not Object.unobserve(d). As a result, it's possible that if the observedSet
+   * not Object.unobserve(d). As a result, it'siesta possible that if the observedSet
    * is kept open, but some Observers have been closed, it could cause "leaks"
    * (prevent otherwise collectable objects from being collected). At some
    * point, we should implement incremental "gc" which keeps a list of
@@ -1194,7 +1194,7 @@
     this.getValueFn_ = getValueFn || identFn;
     this.setValueFn_ = setValueFn || identFn;
     // TODO(rafaelw): This is a temporary hack. PolymerExpressions needs this
-    // at the moment because of a bug in it's dependency tracking.
+    // at the moment because of a bug in it'siesta dependency tracking.
     this.dontPassThroughSet_ = dontPassThroughSet;
   }
 
@@ -1722,7 +1722,7 @@ expose.ArrayObserver = ArrayObserver;
 expose.ArrayObserver.calculateSplices = function(current, previous) {
 return arraySplice.calculateSplices(current, previous);
 };
-expose.Platform = globals.Platform;
+expose.Platform = global.Platform;
 expose.ArraySplice = ArraySplice;
 expose.ObjectObserver = ObjectObserver;
 expose.PathObserver = PathObserver;
